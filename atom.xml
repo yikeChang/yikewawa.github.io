@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="yikewawa.gitbub.io/"/>
-  <updated>2019-03-21T04:41:52.191Z</updated>
+  <updated>2019-03-22T15:45:40.779Z</updated>
   <id>yikewawa.gitbub.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试</title>
+    <link href="yikewawa.gitbub.io/2019/03/22/go/"/>
+    <id>yikewawa.gitbub.io/2019/03/22/go/</id>
+    <published>2019-03-22T06:35:40.000Z</published>
+    <updated>2019-03-22T15:45:40.779Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p> 艾迪康发生率的恐惧的咖啡金阿斯顿浪费快圣诞节安防</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h2&gt;&lt;p&gt; 艾迪康发生率的恐惧的咖啡金阿斯顿浪费快圣诞节安防&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="Web" scheme="yikewawa.gitbub.io/categories/Web/"/>
+    
+    
+      <category term="Nodejs" scheme="yikewawa.gitbub.io/tags/Nodejs/"/>
+    
+      <category term="Express" scheme="yikewawa.gitbub.io/tags/Express/"/>
+    
+  </entry>
   
   <entry>
     <title>react and vue summary</title>
