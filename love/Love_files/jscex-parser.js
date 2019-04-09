@@ -164,9 +164,9 @@ var OPERATORS = array_to_hash([
         "/",
         "%",
         ">>",
-        "<<", "="">>>",
-        "<", "="">",
-        "<=", "="">=",
+        "<<", ">>>",
+        "<", ">",
+        "<=", ">=",
         "==",
         "===",
         "!=",
@@ -179,7 +179,7 @@ var OPERATORS = array_to_hash([
         "*=",
         "%=",
         ">>=",
-        "<<=", "="">>>=",
+        "<<=", ">>>=",
         "|=",
         "^=",
         "&=",
@@ -211,7 +211,7 @@ function is_letter(ch) {
 
 function is_digit(ch) {
         ch = ch.charCodeAt(0);
-        return ch >= 48 && ch <= 57;="" xxx:="" find="" out="" if="" "unicodedigit"="" means="" something="" else="" than="" 0..9="" };="" function="" is_alphanumeric_char(ch)="" {="" return="" is_digit(ch)="" ||="" is_letter(ch);="" is_unicode_combining_mark(ch)="" unicode.non_spacing_mark.test(ch)="" unicode.space_combining_mark.test(ch);="" is_unicode_connector_punctuation(ch)="" unicode.connector_punctuation.test(ch);="" is_identifier_start(ch)="" ch="=" "$"="" "_"="" is_identifier_char(ch)="" "\u200c"="" zero-width="" non-joiner="" <zwnj="">
+        return ch >= 48 && ch <= 57; xxx: find out if "unicodedigit" means something else than 0..9 }; function is_alphanumeric_char(ch) { return is_digit(ch) || is_letter(ch); is_unicode_combining_mark(ch) unicode.non_spacing_mark.test(ch) unicode.space_combining_mark.test(ch); is_unicode_connector_punctuation(ch) unicode.connector_punctuation.test(ch); is_identifier_start(ch) ch="=" "$" "_" is_identifier_char(ch) "\u200c" zero-width non-joiner <zwnj>
                 || ch == "\u200d" // zero-width joiner <zwj> (in my ECMA-262 PDF, this is also 200c)
         ;
 };
@@ -594,7 +594,7 @@ var ASSIGNMENT = (function(a, ret, i){
         }
         return ret;
 })(
-        ["+=", "-=", "/=", "*=", "%=", ">>=", "<<=", "="">>>=", "|=", "^=", "&="],
+        ["+=", "-=", "/=", "*=", "%=", ">>=", "<<=", ">>>=", "|=", "^=", "&="],
         { "=": true },
         0
 );
@@ -615,8 +615,8 @@ var PRECEDENCE = (function(a, ret){
                 ["^"],
                 ["&"],
                 ["==", "===", "!=", "!=="],
-                ["<", "="">", "<=", "="">=", "in", "instanceof"],
-                [">>", "<<", "="">>>"],
+                ["<", ">", "<=", ">=", "in", "instanceof"],
+                [">>", "<<", ">>>"],
                 ["+", "-"],
                 ["*", "/", "%"]
         ],
